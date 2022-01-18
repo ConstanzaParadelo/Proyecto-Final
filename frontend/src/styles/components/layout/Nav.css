@@ -1,0 +1,15 @@
+#menu a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #198754;
+}
+#menu a:hover{
+  background-color: #0c4e2f;
+  color: white; 
+}
+
+#responsive-navbar-nav a:hover{
+  background-color: #0c4e2f;
+  color: white;
+
+}

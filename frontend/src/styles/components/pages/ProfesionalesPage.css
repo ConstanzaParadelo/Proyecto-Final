@@ -1,0 +1,25 @@
+.container {
+    margin-top: 20px;
+}
+.container h2{
+    text-align: center;
+    color: #198754;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+
+}
+.container h4{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    
+}
+
+.container img{
+   
+   width: 200px;
+   height: 200px;
+   margin-top: 10px;
+  
+  
+}

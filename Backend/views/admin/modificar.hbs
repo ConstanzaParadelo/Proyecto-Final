@@ -1,0 +1,41 @@
+<div class="container" style="margin: 100px auto;">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modificar una nueva novedad</h4>
+            <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
+               <input type="hidden" value="{{novedad.id}}" name="id">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Titulo</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Agregar Titulo" value="{{novedad.titulo}}"/>
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Subtitulo</label>
+                    <textarea name="subtitulo" class="form-control">{{novedad.subtitulo}}</textarea>
+                    {{!-- <input type="text" class="form-control" id="subtitulo" name="subtitulo" placeholder="Agregar Subtitulo">{{novedad.subtitulo}}</textarea> --}}
+                </div>
+                <div class="mb-3">
+                 <p>
+                    <label for="formGroupExampleInput2" class="form-label">Imagen</label>
+                    <input type="file" class="form-control" id="imagen" name="imagen" placeholder="Agregar imagen">
+                 </p>
+                 <p>
+                    <label><input type="checkbox" name="img_delete"
+                    id="img_delete" value="1">Eliminar imagen actual?</label>
+                    <input type="hidden" name="img_original"
+                    value="{{novedad.img_id}}">
+                </p>
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Cuerpo</label>
+                    <textarea type="text" class="form-control" id="cuerpo" name="cuerpo" placeholder="Agregar Cuerpo">{{novedad.cuerpo}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Modificar</button>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+   
+
+        </div>
+    </div>
+</div>

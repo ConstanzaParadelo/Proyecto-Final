@@ -1,0 +1,64 @@
+#menu a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #198754;
+}
+#menu a:hover{
+  background-color: #0c4e2f;
+  color: white; 
+}
+
+#navbarNavAltMarkup a:hover{
+  background-color: #0c4e2f;
+  color: white;
+
+}
+
+
+#carouselExampleControls img{
+  align-items: center;
+  width: 50%;
+  margin-left: 25%;
+  
+}
+/* .container{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  padding: 5px;
+  border: 5px;
+  
+  margin-top: 15px;
+} */
+.container h2{
+  text-decoration: none;
+  color: #198754;
+}
+.container h3{
+  color:#198754;
+ 
+}
+.container legend{
+  background-color:#198754 ;
+  color: white;
+}
+
+.container .accordion-body img{
+  width: 50%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+footer{
+  
+  height: 4rem;
+  padding: 20px;
+  background-color:#198754;
+ 
+  }
